@@ -1,0 +1,23 @@
+# SIH26188 — AI Document Screening System
+# Deployment dependencies for Streamlit Community Cloud
+#
+# NOTE: EasyOCR + PyTorch require ~800MB+ RAM.
+# Streamlit Community Cloud has a 1GB limit.
+# Use --extra-index-url for CPU-only PyTorch to reduce footprint.
+# If the app crashes on Streamlit Cloud, consider Hugging Face Spaces
+# or a cloud VM with >=2GB RAM.
+
+# ── Core application ─────────────────────────────────────────────────
+streamlit>=1.28.0
+opencv-python-headless>=4.8.0
+numpy>=1.24.0
+pandas>=2.0.0
+Pillow>=10.0.0
+
+# ── OCR engine ───────────────────────────────────────────────────────
+# EasyOCR pulls in PyTorch as a dependency.
+# CPU-only torch is sufficient (gpu=False in code).
+# Pin torch CPU to minimize deployment size.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+easyocr>=1.7.0
