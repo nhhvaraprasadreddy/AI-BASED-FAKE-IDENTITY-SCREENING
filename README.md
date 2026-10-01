@@ -1,4 +1,4 @@
-# 🛡️ AI Document Screening System — SIH26188
+# 🛡️ AI Document Screening System 
 
 ![SIH26188](https://img.shields.io/badge/SIH-26188-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.11+-green.svg)
@@ -183,12 +183,6 @@ pytest tests/ -v
 | 🟢 LOW | 0.0 – 0.3 | No significant indicators of concern |
 | 🟡 MEDIUM | 0.3 – 0.6 | Some indicators warrant review |
 | 🔴 HIGH | 0.6 – 1.0 | Multiple indicators — recommend detailed human review |
-
----
-
-## 👥 Team
-
-*Smart India Hackathon 2026 — Team SIH26188*
 
 ---
 
